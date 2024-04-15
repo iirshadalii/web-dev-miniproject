@@ -47,9 +47,6 @@ export default function App() {
         />
       }
       {
-        <Services screenSize={screenSize}/>
-      }
-      {
         <StaticSection 
             sectionName="ownership"
             dataObject={mainData.ownership}
