@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./assets/components/Navbar";
 import Hero from "./assets/components/Hero";
-import Services from "./assets/components/Services";
 import Models from "./assets/components/ModelsRow";
 import Footer from "./assets/components/Footer";
 import StaticSection from "./assets/components/StaticSection";
@@ -45,9 +44,6 @@ export default function App() {
           sectionName="builds"
           dataObject={mainData.builds}
         />
-      }
-      {
-        <Services screenSize={screenSize}/>
       }
       {
         <StaticSection 
