@@ -1,0 +1,290 @@
+@use "./mixin" as *;
+@use "./variables" as *;
+
+@use "./ModelsTab";
+@use "./DefaultTabs";
+
+:root {
+    --mavbar-heigth: 4rem;
+}
+
+.header {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    &.fixed {
+        position: fixed;
+        top: 0;    
+    }
+}
+
+.navbar {
+    width: 100%;
+    
+    height: var(--mavbar-heigth);
+    @include flex(row, center, space-between);
+
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.01) 100%);
+
+    color: $text-white;
+    font-weight: 600;
+
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    &>*{
+        @include flex(row, center, center);
+        gap: 1rem;
+    }
+
+    &.desktop {
+
+        height: 6rem;
+        padding: 0 3rem;
+    }
+    &.light {
+        background: white;
+        color: black;
+        &>* {
+            :hover {
+                color: $project-blue;
+            }
+        }
+        .navbar__right__side {
+            .navbar__search {
+                background-color: #F6F6F6;
+            }
+        }
+    }
+    &.minimized {
+        height: 2rem;
+        cursor: pointer;
+        .navbar__left__side {
+            font-size: .9rem;
+            gap: 0.5rem;
+            :hover {
+                color: black;
+            }
+            .navbar__logo {
+                width: 1.5rem;
+            }
+            .navbar__slogan {
+                font-weight: 300;
+            }
+        }
+        .navbar__right {
+            font-size: 1.1rem;
+            :hover {
+                color: $project-blue;
+            }
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+    &.hamburg_opened {
+        background: white;
+        color: black;
+        border: .05rem solid $project-black;
+        .navbar__right__side {
+            gap: 2rem;
+            height: 100%;
+            margin-right: 1rem;
+            :hover {
+                color: $project-blue;
+            }
+            .hamburger {
+                border-left: .05rem solid $project-black;
+                height: 100%;
+                aspect-ratio: 1 / 1.3;
+                @include flex(row, center, center);
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+.navbar__left__side {
+    margin-left: 1.5rem;
+    .navbar__logo {
+        width: 2rem;
+        aspect-ratio: 1 / 1;
+        border: 1.5px solid $text-white;
+        border-radius: 50%;
+        background-image: url(../../../../public/nav-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+    }
+    .navbar__slogan {
+        font-size: .9rem;
+        font-weight: 300;
+        .slogan__bold {
+            font-weight: 600;
+        }
+    }
+}
+
+.navbar__right__side {
+    margin-right: 2rem;
+    font-size: .8rem;
+
+    .humbuger__icon {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+.hamburger__menu {
+
+    width: 100%;
+    @include flex(column, center, center);
+    gap: 1.5rem;
+    background-color: #fff;
+    padding: 3rem 0;
+
+    position: absolute;
+    top: var(--mavbar-heigth);
+    left: 0;
+    &>* {
+        cursor: pointer;
+        width: 75%;
+        &:not(:last-child):hover {
+            color: $project-blue;
+        }
+    }
+    .hamburger__item {
+        @include flex(row, center, space-between);
+
+        font-size: 1.3rem;
+        font-weight: 500;
+        &>* {
+            pointer-events: none;
+        }
+    }
+    .search__container {
+        @include flex(row, center, flex-start);
+        gap: 1rem;
+        height: 3rem;
+        background-color: $project-grey-light;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        position: relative;
+        i {
+
+        }
+        .search__input {
+            background-color: transparent;
+            border: none;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            width: 100%;
+        }
+        .cancel__button {
+            border: none;
+            background-color: #fff;
+            width: 15%;
+            height: 3rem;
+            z-index: 5;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+
+.navbar__item {
+    @include flex(row, center, center);
+    gap: .5rem;
+
+    cursor: pointer;
+    >* {
+        pointer-events: none;
+    }
+}
+
+
+.navigate__back__row {  
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid $project-grey;
+    margin-top: var(--mavbar-heigth);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    position: relative;
+    cursor: pointer;
+    &>* {
+        position: absolute;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+    p {
+        right: 50%;
+    }
+    i {
+        right: 93%;
+        font-size: 1.3rem;
+    }
+    &:hover {
+        color: $project-blue;
+    }
+}
+body {
+    
+}
+// TABLET
+@media only screen and (min-width: 768px) {
+    .navigate__back__row { 
+        height: 4rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+        position: relative;
+    }
+}
+
+// DESKTOP
+@media only screen and (min-width: 1280px) {
+    .header {
+
+    }
+    // not really row ONLY A CIRCLE CLOSE
+    .navigate__back__row { 
+        position: static;
+        border: none;
+        height: 0;
+        margin: 0;
+        i {
+            width: 3rem;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            background-color: #fff;
+            font-size: 1.3rem;
+            @include flex(row, center, center);
+
+            box-shadow: 2px 7px 16px -3px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 7px 16px -3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 7px 16px -3px rgba(0,0,0,0.75);
+
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+            
+            
+            &:hover {
+                background-color: $background-silver;
+            }
+        }
+    }
+
+        
+
+}

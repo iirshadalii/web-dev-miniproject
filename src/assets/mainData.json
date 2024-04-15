@@ -1,0 +1,326 @@
+{
+    "hero": {
+        "data": [
+            {
+                "id": 1,
+                "title": "PACK A SURPIZE THIS SUMMER",
+                "text": "The BMW Road Home Sales Event offers a credit of up to ₹2.40.000 on select BMW models - now through May 3rd",
+                "image": {
+                    "mobile": "hero-1-mobile.jpg",
+                    "tablet": "hero-1-tablet.jpg",
+                    "desktop": "hero-1-desktop.jpg"
+                },
+                "buttons": [
+                    {
+                        "text": "Offers Details",
+                        "className": "button__blue"
+                    },
+                    {
+                        "text": "Offers Details",
+                        "className": "button__white"
+                    }
+                ],
+                "slogan": [],
+                "isActive": true
+            },
+            {
+                "id": 2,
+                "title": "EMBODY THE MAXIMUM",
+                "text":  "THE FIRST EVER BMW XM",
+                "image": {
+                    "mobile": "hero-2-mobile.jpg",
+                    "tablet": "hero-2-tablet.jpg",
+                    "desktop": "hero-2-desktop.jpg"
+                },
+                "buttons": [
+                    {
+                        "text": "Learn More",
+                        "className": "button__blue"
+                    },
+                    {
+                        "text": "Pre-Order",
+                        "className": "button__white"
+                    }
+                ],
+                "slogan": ["The", "Ultimate", "Driving Machine ®"],
+                "isActive": false
+            },
+            {
+                "id": 3,
+                "title": "AS ELECTRIC AS YOU",
+                "text":  "iX shown on left, i4 shown on the right",
+                "image": {
+                    "mobile": "hero-3-mobile.jpg",
+                    "tablet": "hero-3-tablet.jpg",
+                    "desktop": "hero-3-desktop.jpg"
+                },
+                "buttons": [
+                    {
+                        "text": "Explore the iX",
+                        "className": "button__blue"
+                    },
+                    {
+                        "text": "Explore the i4",
+                        "className": "button__white"
+                    }
+                ],
+                "slogan": ["The Ultimate", "Electric", "Driving Machine"],
+                "isActive": false
+            },
+            {
+                "id": 4,
+                "title":  "THE M2",
+                "text": "DISCOVER THE 2024 BMW M2 COUPE",
+                "image": {
+                    "mobile": "hero-4-mobile.jpg",
+                    "tablet": "hero-4-tablet.jpg",
+                    "desktop": "hero-4-desktop.jpg"
+                },
+                "buttons": [
+                    {
+                        "text": "Build Yours",
+                        "className": "button__blue"
+                    },
+                    {
+                        "text": "Learn More",
+                        "className": "button__white"
+                    }
+                ],
+                "slogan":  ["The", "Ultimate", "Driving Machine ®"],
+                "isActive": false
+            }
+        ]
+    },
+    "news": {
+        "data": [
+            {
+                "id": 1,
+                "title": "THE 2024 BMW X7",
+                "text": "NEXT-LEVEL LUXURY",
+                "image": {
+                    "mobile": "card-x7-mobile.jpg",
+                    "tablet": "card-x7-tablet.jpg",
+                    "desktop": "card-x7-desktop.jpg"
+                },
+                "link": {
+                    "text": "Learn More",
+                    "icon": false
+                }
+            },
+            {
+                "id": 2,
+                "title": "THE 2024 BMW X5",
+                "text": "LEAD WITH CONFIDENCE",
+                "image": {
+                    "mobile": "card-x5-mobile.jpg",
+                    "tablet": "card-x5-tablet.jpg",
+                    "desktop": "card-x5-desktop.jpg"
+                },
+                "link": {
+                    "text": "Learn More",
+                    "icon": false
+                }
+            },
+            {
+                "id": 3,
+                "title": "THE 2024 BMW 5 SERIES SEDAN",
+                "text": "THE 5",
+                "image": {
+                    "mobile": "card-5-mobile.jpg",
+                    "tablet": "card-5-tablet.jpg",
+                    "desktop": "card-5-desktop.jpg"
+                },
+                "link": {
+                    "text": "Learn More",
+                    "icon": false
+                }
+            },
+            {
+                "id": 4,
+                "title": "POWER AND PRESTIGE",
+                "text": "THE 8",
+                "image": {
+                    "mobile": "card-8-mobile.jpg",
+                    "tablet": "card-8-tablet.jpg",
+                    "desktop": "card-8-desktop.jpg"
+                },
+                "link": {
+                    "text": "Learn More",
+                    "icon": false
+                }
+            }
+        ]
+    },
+    "builds": {
+        "section_title": "Build the BMW of your dreams.",
+        "data": [
+            {
+                "id": 1,
+                "image": "build-3.jpg",
+                "title": "3 Series Sedan",
+                "text": "",
+                "link": {
+                    "text": "Start Designing",
+                    "icon": false
+                }
+            },
+            {
+                "id": 2,
+                "image": "build-x3.jpg",
+                "title": "X3",
+                "text": "",
+                "link": {
+                    "text": "Start Designing",
+                    "icon": false
+                }
+            },
+            {
+                "id": 3,
+                "image": "build-5.jpg",
+                "title": "5 Series Sedan",
+                "text": "",
+                "link": {
+                    "text": "Start Designing",
+                    "icon": false
+                }
+            },
+            {
+                "id": 4,
+                "image": "build-x5.jpg",
+                "title": "X5",
+                "text": "",
+                "link": {
+                    "text": "Start Designing",
+                    "icon": false
+                }
+            }
+        ],
+        "button": {
+            "text": "Build Your Own",
+            "className": "button__black"
+        }
+    },
+    "services": {
+            "data":  [
+                {
+                    "id": 1,
+                    "title": "BMW VALUE SERVICE",
+                    "text": "Think we're expensive? Think again.",
+                    "image": {
+                        "mobile": "service-4-mobile.jpg",
+                        "tablet": "service-4-tablet.jpg",
+                        "desktop": "service-4-desktop.jpg"
+                    },
+                    "buttons": [
+                        {
+                            "text": "Learn More",
+                            "className": "button__white"
+                        }
+                    ],
+                    "slogan": [],
+                    "isActive": false
+                },
+                {
+                    "id": 2,
+                    "title": "DESIGNED FOR THE DRIVEN",
+                    "text": "Ear up to 5X POINTS on eligible purchases.",
+                    "image": {
+                        "mobile": "service-3-mobile.jpg",
+                        "tablet": "service-3-tablet.jpg",
+                        "desktop": "service-3-desktop.jpg"
+                    },
+                    "buttons": [
+                        {
+                            "text": "Learn More",
+                            "className": "button__white"
+                        }
+                    ],
+                    "slogan": [],
+                    "isActive": false
+                },
+                
+                {
+                    "id": 3,
+                    "title": "INTRODUCING BMW ULTIMATE CARE OIL SERVICES",
+                    "text": "3 years prepaid for ₹26,000 for BMWs that have reached 60 months or 60.000 miles.",
+                    "image": {
+                        "mobile": "service-2-mobile.jpg",
+                        "tablet": "service-2-tablet.jpg",
+                        "desktop": "service-2-desktop.jpg"
+                    },
+                    "buttons": [
+                        {
+                            "text": "Learn More",
+                            "className": "button__white"
+                        }
+                    ],
+                    "slogan": [],
+                    "isActive": false
+                },
+                {
+                    "id": 4,
+                    "title": "GET THE BEST SERVICE CARE",
+                    "text": "",
+                    "image": {
+                        "mobile": "service-1-mobile.jpg",
+                        "tablet": "service-1-tablet.jpg",
+                        "desktop": "service-1-desktop.jpg"
+                    },
+                    "buttons": [
+                        {
+                            "text": "Learn More",
+                            "className": "button__white"
+                        }
+                    ],
+                    "slogan": [],
+                    "isActive": true
+                }
+            ]
+    },
+    "ownership": {
+        "section_title": "Ownership starts here.",
+        "data": [
+            
+            {
+                "id": 1,
+                "image": "financing.jpg",
+                "title": "Apply for Financing",
+                "text": "Own the BMW of your dreams with BMW Financial Services.",
+                "link": {
+                    "text": "Get Started",
+                    "icon": true
+                }
+            },
+            {
+                "id": 2,
+                "image": "credit-score.jpg",
+                "title": "Check Your Credit Score",
+                "text": "See where you stand on your journey to owning a BMW.",
+                "link": {
+                    "text": "Visit CreditScore",
+                    "icon": true
+                }
+            },
+            {
+                "id": 3,
+                "image": "value.jpg",
+                "title": "Trade-in Value",
+                "text": "Get the latest information on your vehi’s trade-in value today.",
+                "link": {
+                    "text": "Visit Website",
+                    "icon": true
+                }
+            },
+            {
+                "id": 4,
+                "image": "connect.jpg",
+                "title": "Stay Connected",
+                "text": "Receive the latest offers, releases, and news from BMW.",
+                "link": {
+                    "text": "Sign Up Now",
+                    "icon": false
+                }
+            }
+        ]
+    }
+}

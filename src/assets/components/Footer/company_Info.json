@@ -1,0 +1,36 @@
+{
+    "id": "company_info",
+    "title": "Company Info",
+    "data": [
+        {
+            "id": 1,
+            "text": "Contact Us",
+            "hasIcon": false,
+            "url": ""
+        },
+        {
+            "id": 2,
+            "text": "Company Info",
+            "hasIcon": false,
+            "url": ""
+        },
+        {
+            "id": 3,
+            "text": "BMW Motorcycles",
+            "hasIcon": true,
+            "url": ""
+        },
+        {
+            "id": 4,
+            "text": "BMW Bank",
+            "hasIcon": false,
+            "url": ""
+        },
+        {
+            "id": 5,
+            "text": "FAQ",
+            "hasIcon": true,
+            "url": ""
+        }
+    ]
+}
